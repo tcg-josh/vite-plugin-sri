@@ -20,10 +20,10 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 import { createHash } from 'crypto'
-import cheerio from 'cheerio'
+import * as cheerio from 'cheerio'
 import fetch from 'node-fetch'
 
-export default function sri () {
+export default function sri() {
   return {
     name: 'vite-plugin-sri',
     enforce: 'post',
